@@ -1,0 +1,1 @@
+{"version":3,"file":"copyNumberVariantTypes.js","sourceRoot":"","sources":["../../../src/CopyNumberVariantList/copyNumberVariantTypes.tsx"],"names":[],"mappings":";;;AAAa,QAAA,QAAQ,GAAG,CAAC,KAAK,EAAE,KAAK,CAAC,CAAA;AAEzB,QAAA,aAAa,GAAG;IAC3B,GAAG,EAAE,UAAU;IACf,GAAG,EAAE,aAAa;CACnB,CAAA;AAEY,QAAA,aAAa,GAAG;IAC3B,GAAG,EAAE,SAAS;IACd,GAAG,EAAE,SAAS;CACf,CAAA"}

@@ -1,0 +1,24 @@
+import PropTypes from 'prop-types';
+type TranscriptConsequencePropType = {
+    consequence_terms?: string[];
+    domains?: string[];
+    gene_id: string;
+    gene_version: string;
+    gene_symbol: string;
+    hgvs?: string;
+    hgvsc?: string;
+    hgvsp?: string;
+    is_canonical?: boolean;
+    is_mane_select?: boolean;
+    is_mane_select_version?: boolean;
+    lof?: string;
+    lof_flags?: string;
+    lof_filter?: string;
+    major_consequence?: string;
+    polyphen_prediction?: string;
+    sift_prediction?: string;
+    transcript_id: string;
+    transcript_version: string;
+};
+declare const TranscriptConsequencePropType: PropTypes.Requireable<TranscriptConsequencePropType>;
+export default TranscriptConsequencePropType;

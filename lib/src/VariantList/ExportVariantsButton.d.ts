@@ -1,0 +1,60 @@
+import React from 'react';
+import { Population } from '../VariantPage/VariantPage';
+import { DatasetId } from '../../dataset-metadata/metadata';
+type ColumnGetter = (variant: VariantTableVariant) => string;
+export type Column = {
+    label: string;
+    getValue: ColumnGetter;
+};
+export declare const createPopulationColumns: (datasetId: DatasetId) => Column[];
+export declare const getJointFilters: ColumnGetter;
+export declare const getJointFAFGroup: ColumnGetter;
+export declare const getJointFAFFreq: ColumnGetter;
+export declare const getExomeFilters: ColumnGetter;
+export declare const getV4ExomeFAFGroup: (variant: VariantTableVariant) => string;
+export declare const getV4ExomeFAFFreq: (variant: VariantTableVariant) => string;
+export declare const getV2ExomeFAFGroup: (variant: VariantTableVariant) => string;
+export declare const getV2ExomeFAFFreq: (variant: VariantTableVariant) => string;
+export declare const getGenomeFAFGroup: (variant: VariantTableVariant) => string;
+export declare const getGenomeFAFFreq: (variant: VariantTableVariant) => string;
+export declare const getCadd: ColumnGetter;
+export declare const getRevel: ColumnGetter;
+export declare const getSpliceAI: ColumnGetter;
+export declare const getPangolin: ColumnGetter;
+export declare const getPhylop: ColumnGetter;
+export declare const getSift: ColumnGetter;
+export declare const getPolyphen: ColumnGetter;
+export declare const createVersionSpecificColumns: (datasetId: DatasetId) => Column[];
+export type VariantTableVariant = {
+    ac: number;
+    ac_hemi: number;
+    ac_hom: number;
+    an: number;
+    af: number;
+    clinical_significance: string;
+    clinvar_variation_id: string;
+    consequence?: string;
+    flags: string[];
+    hgvs?: string;
+    hgvsc?: string;
+    hgvsp?: string;
+    populations: Population[];
+    pos: number;
+    rsids?: string[];
+    transcript_id: string;
+    transcript_version: string;
+    variant_id: string;
+    exome: {
+        filters: string[];
+    } | null;
+    genome: {
+        filters: string[];
+    } | null;
+};
+type Props = {
+    datasetId: DatasetId;
+    exportFileName: string;
+    variants: VariantTableVariant[];
+};
+declare const ExportVariantsButton: ({ datasetId, exportFileName, variants, ...rest }: Props) => React.JSX.Element;
+export default ExportVariantsButton;

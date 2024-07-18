@@ -1,0 +1,2 @@
+declare const VariantCoocurrenceVariantIdsForm: any;
+export default VariantCoocurrenceVariantIdsForm;

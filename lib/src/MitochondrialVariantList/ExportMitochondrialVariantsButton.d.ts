@@ -1,0 +1,2 @@
+declare const ExportMitochondrialVariantsButton: any;
+export default ExportMitochondrialVariantsButton;

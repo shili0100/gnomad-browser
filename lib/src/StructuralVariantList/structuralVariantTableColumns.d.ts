@@ -1,0 +1,60 @@
+import React from 'react';
+import { Context } from './StructuralVariants';
+declare const structuralVariantTableColumns: ({
+    key: string;
+    heading: string;
+    minWidth: number;
+    compareFunction: (v1: any, v2: any, order?: string) => any;
+    render: (row: any, key: any) => React.JSX.Element;
+    getSearchTerms?: undefined;
+    contextNotes?: undefined;
+    shouldShowInContext?: undefined;
+    grow?: undefined;
+    isRowHeader?: undefined;
+} | {
+    key: string;
+    heading: string;
+    minWidth: number;
+    compareFunction: (v1: any, v2: any, order?: string) => any;
+    getSearchTerms: (variant: any) => any[];
+    render: (variant: any, _key: any, { colorKey, highlightWords }: any) => React.JSX.Element;
+    contextNotes?: undefined;
+    shouldShowInContext?: undefined;
+    grow?: undefined;
+    isRowHeader?: undefined;
+} | {
+    key: string;
+    heading: string;
+    contextNotes: string;
+    minWidth: number;
+    compareFunction: (v1: any, v2: any, order?: string) => any;
+    render: (variant: any) => React.JSX.Element;
+    shouldShowInContext: (context: Context) => boolean;
+    getSearchTerms?: undefined;
+    grow?: undefined;
+    isRowHeader?: undefined;
+} | {
+    key: string;
+    heading: string;
+    grow: number;
+    minWidth: number;
+    render: (variant: any) => React.JSX.Element;
+    compareFunction?: undefined;
+    getSearchTerms?: undefined;
+    contextNotes?: undefined;
+    shouldShowInContext?: undefined;
+    isRowHeader?: undefined;
+} | {
+    key: string;
+    heading: string;
+    isRowHeader: boolean;
+    minWidth: number;
+    compareFunction: (v1: any, v2: any, order?: string) => any;
+    getSearchTerms: (variant: any) => any[];
+    render: (variant: any, _key: any, { highlightWords }: any) => React.JSX.Element;
+    contextNotes?: undefined;
+    shouldShowInContext?: undefined;
+    grow?: undefined;
+})[];
+export default structuralVariantTableColumns;
+export declare const getColumnsForContext: (context: Context) => {};

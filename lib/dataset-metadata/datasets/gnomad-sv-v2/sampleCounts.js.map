@@ -1,0 +1,1 @@
+{"version":3,"file":"sampleCounts.js","sourceRoot":"","sources":["../../../../dataset-metadata/datasets/gnomad-sv-v2/sampleCounts.js"],"names":[],"mappings":";AAAA,MAAM,YAAY,GAAG;IACnB,KAAK,EAAE,KAAK;IAEZ,OAAO,EAAE;QACP,QAAQ,EAAE;YACR,KAAK,EAAE,IAAI;SACZ;QAED,SAAS,EAAE;YACT,KAAK,EAAE,IAAI;SACZ;KACF;CACF,CAAA;AACD,MAAM,CAAC,OAAO,GAAG,YAAY,CAAA"}

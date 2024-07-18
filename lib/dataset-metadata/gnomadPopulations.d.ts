@@ -1,0 +1,36 @@
+import { DatasetId } from './metadata';
+export declare const GNOMAD_POPULATION_NAMES: {
+    readonly afr: "African/African American";
+    readonly ami: "Amish";
+    readonly amr: "Admixed American";
+    readonly asj: "Ashkenazi Jewish";
+    readonly eas: "East Asian";
+    readonly mid: "Middle Eastern";
+    readonly eur: "European";
+    readonly nfe: "European (non-Finnish)";
+    readonly fin: "European (Finnish)";
+    readonly oth: "Remaining individuals";
+    readonly sas: "South Asian";
+    readonly rmi: "Remaining";
+    readonly remaining: "Remaining";
+    readonly eas_jpn: "Japanese";
+    readonly eas_kor: "Korean";
+    readonly eas_oea: "Other East Asian";
+    readonly nfe_bgr: "Bulgarian";
+    readonly nfe_est: "Estonian";
+    readonly nfe_nwe: "North-western European";
+    readonly nfe_onf: "Other non-Finnish European";
+    readonly nfe_seu: "Southern European";
+    readonly nfe_swe: "Swedish";
+};
+export type PopulationId = keyof typeof GNOMAD_POPULATION_NAMES;
+export type PopulationIdAndChromosome = PopulationId | `${PopulationId}_XX` | `${PopulationId}_XY` | 'XX' | 'XY';
+export declare const populationName: (populationId: string) => string;
+export declare const populationsInDataset: {
+    ExAC: ("afr" | "ami" | "amr" | "asj" | "eas" | "mid" | "eur" | "nfe" | "fin" | "oth" | "sas" | "rmi" | "remaining" | "eas_jpn" | "eas_kor" | "eas_oea" | "nfe_bgr" | "nfe_est" | "nfe_nwe" | "nfe_onf" | "nfe_seu" | "nfe_swe")[];
+    v2: ("afr" | "ami" | "amr" | "asj" | "eas" | "mid" | "eur" | "nfe" | "fin" | "oth" | "sas" | "rmi" | "remaining" | "eas_jpn" | "eas_kor" | "eas_oea" | "nfe_bgr" | "nfe_est" | "nfe_nwe" | "nfe_onf" | "nfe_seu" | "nfe_swe")[];
+    v3: ("afr" | "ami" | "amr" | "asj" | "eas" | "mid" | "eur" | "nfe" | "fin" | "oth" | "sas" | "rmi" | "remaining" | "eas_jpn" | "eas_kor" | "eas_oea" | "nfe_bgr" | "nfe_est" | "nfe_nwe" | "nfe_onf" | "nfe_seu" | "nfe_swe")[];
+    v4: ("afr" | "ami" | "amr" | "asj" | "eas" | "mid" | "eur" | "nfe" | "fin" | "oth" | "sas" | "rmi" | "remaining" | "eas_jpn" | "eas_kor" | "eas_oea" | "nfe_bgr" | "nfe_est" | "nfe_nwe" | "nfe_onf" | "nfe_seu" | "nfe_swe")[];
+    default: never[];
+};
+export declare const getPopulationsInDataset: (datasetId: DatasetId) => PopulationId[];

@@ -1,0 +1,1 @@
+{"version":3,"file":"GeneMetadata.js","sourceRoot":"","sources":["../../../src/__factories__/GeneMetadata.ts"],"names":[],"mappings":";;AAAA,qCAAiC;AAGjC,MAAM,mBAAmB,GAAG,iBAAO,CAAC,MAAM,CAAe,GAAG,EAAE,CAAC,CAAC;IAC9D,OAAO,EAAE,YAAY;IACrB,YAAY,EAAE,SAAS;IACvB,MAAM,EAAE,UAAU;IAClB,uBAAuB,EAAE,iBAAiB;IAC1C,KAAK,EAAE,EAAE;CACV,CAAC,CAAC,CAAA;AAEH,kBAAe,mBAAmB,CAAA"}

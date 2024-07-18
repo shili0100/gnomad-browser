@@ -1,0 +1,2 @@
+declare const TranscriptsTissueExpressionPlot: any;
+export default TranscriptsTissueExpressionPlot;
