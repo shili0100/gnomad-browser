@@ -18,27 +18,10 @@
       "import": "./es/index.mjs",
       "require": "./lib/index.js"
     },
-    "./global": {
-      "types": "./global.d.ts"
-    },
-    "./es": {
-      "types": "./es/index.d.ts",
-      "import": "./es/index.mjs"
-    },
+
     "./lib": {
       "types": "./lib/index.d.ts",
       "require": "./lib/index.js"
-    },
-    "./es/*.mjs": {
-      "types": "./es/*.d.ts",
-      "import": "./es/*.mjs"
-    },
-    "./es/*": {
-      "types": [
-        "./es/*.d.ts",
-        "./es/*/index.d.ts"
-      ],
-      "import": "./es/*.mjs"
     },
     "./lib/*.js": {
       "types": "./lib/*.d.ts",
@@ -58,7 +41,6 @@
   },
   "sideEffects": [
     "dist/*",
-    "lib/components/*/style/*"
   ],
   "peerDependencies": {
     "react": "^17.0.0"
