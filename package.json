@@ -45,9 +45,6 @@
   "peerDependencies": {
     "react": "^17.0.0"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "@gnomad/identifiers": "3.0.0",
